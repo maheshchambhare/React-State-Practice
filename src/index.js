@@ -2,9 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import ClickMe from "./functionBaseEvent";
 
 ReactDOM.render(
-  <App />,
+  <>
+    <App />
+    <ClickMe />
+  </>,
 
   document.getElementById("root")
 );
