@@ -22,6 +22,11 @@ class App extends React.Component {
       count: this.state.count + 1,
     });
   }
+  decrement() {
+    this.setState({
+      count: this.state.count - 1,
+    });
+  }
   render() {
     return (
       <div>
@@ -29,6 +34,7 @@ class App extends React.Component {
         <button onClick={() => this.newMassage()}>Subscribe</button>
         <h1>count {this.state.count}</h1>
         <button onClick={() => this.increament()}>Increament</button>
+        <button onClick={() => this.decrement()}>decrement</button>
       </div>
     );
   }
